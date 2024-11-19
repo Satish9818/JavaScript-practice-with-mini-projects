@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let form = document.createElement("form");
+        
+        let label1 = document.createElement("label");
+        label1.innerText = "Name:";
+        let input1 = document.createElement("input");
+        input1.type = "text";
+        
+        let label2 = document.createElement("label");
+        label2.innerText = "Email:";
+        let input2 = document.createElement("input");
+        input2.type = "text";
+
+        let genderLabel = document.createElement("label");
+        genderLabel.innerText = "Gender:";
+
+        let maleLabel = document.createElement("label");
+        maleLabel.innerText = "Male";
+        let maleInput = document.createElement("input");
+        maleInput.type = "radio";
+        maleInput.name = "gender"; 
+        maleInput.value = "male"; 
+
+        let femaleLabel = document.createElement("label");
+        femaleLabel.innerText = "Female";
+        let femaleInput = document.createElement("input");
+        femaleInput.type = "radio";
+        femaleInput.name = "gender";
+        femaleInput.value = "female";
+
+        let label4 = document.createElement("label");
+        label4.innerText = "DOB";
+        let input4 = document.createElement("input");
+        input4.type = "date";
+
+        let label5 = document.createElement("label");
+        label5.innerText = "Password";
+        let input5 = document.createElement("input");
+        input5.type = "password";
+
+        let button = document.createElement("button");
+        button.innerText = "Submit";
+
+        form.appendChild(label1);
+        form.appendChild(input1);
+       form.appendChild(document.createElement("br"))
+        form.appendChild(label2);
+        form.appendChild(input2);
+        form.appendChild(document.createElement("br"))
+        form.appendChild(genderLabel);
+        form.appendChild(maleLabel);
+        form.appendChild(maleInput);
+        form.appendChild(femaleLabel);
+        form.appendChild(femaleInput);
+        form.appendChild(document.createElement("br"))
+        form.appendChild(label4);
+        form.appendChild(input4);
+        form.appendChild(document.createElement("br"))
+        form.appendChild(label5);
+        form.appendChild(input5);
+        form.appendChild(document.createElement("br"))
+        form.appendChild(button);
+
+        document.body.append(form);
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    article {
+        height: 110px;
+        width: 200px;
+        display: none;
+        background-color: aqua;
+
+
+    }
+
+    article>ol {
+        border: 2px solid black;
+        list-style-type: none;
+    }
+
+    article>ol>li {
+        border: 2px solid black;
+    }
+
+    ul {
+        margin-left: 200px;
+        display: none;
+        margin-top: -100px;
+    }
+</style>
+
+<body>
+    <button onclick="a()">MEN</button>
+
+    <article>
+
+        <ol>
+            <li onmouseover="b()" onmouseout="c()">TSHIRTS</li>
+            <li>SHIRTS</li>
+            <li>FOOTWEAR</li>
+            <li>JEANS</li>
+            <li>FORMALS</li>
+
+        </ol>
+
+    </article>
+
+    <ul>
+        <li>SLEEVELESS</li>
+        <li>PRINTED</li>
+        <li>GRAPHIC</li>
+        <li>POLO</li>
+    </ul>
+
+
+
+
+
+    <script>
+        let article = document.querySelector("article")
+        let list = document.querySelectorAll("li")
+        let ul =document.querySelectorAll("ul")
+        function a() {
+            if (article.style.display == "none") {
+                article.style.display = "block"
+            }
+            else {
+                article.style.display = "none"
+            }
+
+        }
+
+        list.forEach((x) => {
+            x.addEventListener("mouseover", () => {
+                x.style.backgroundColor = "blue"
+            })
+            x.addEventListener("mouseout", () => {
+                x.style.backgroundColor = "aqua"
+            })
+        })
+
+        function b() {
+            ul.style.display = "block"
+        }
+        function c() {
+            ul.style.display = "none"
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

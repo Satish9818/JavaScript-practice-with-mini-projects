@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label>NAME</label>
+    <input type="text" name="a">
+
+    <label for="">salary</label>
+    <input type="number" name="b">
+
+    <label for="">Company</label>
+    <input type="text" name="c">
+
+    <button onclick="a()">SUBMIT</button>
+
+
+
+
+    <script>
+        let a=()=>{
+        event.preventDefault()
+        console.log("WORKING")
+
+        
+        
+        let userName=document.querySelectorAll("input")[0].value
+        console.log(userName)
+        let salaryEmp=document.querySelectorAll("input")[1].value
+        console.log(salaryEmp)
+        let CompanyEmp=document.querySelectorAll("input")[2].value
+        console.log(CompanyEmp)
+        }
+
+       
+
+
+
+    </script>
+</body>
+</html>

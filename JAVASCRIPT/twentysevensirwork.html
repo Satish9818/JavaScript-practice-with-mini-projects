@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    section {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section>article>h1 {
+        color: white;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 5px 5px 10px white;
+    }
+
+    section>article>h3 {
+        color: white;
+        font-size: 35px;
+        margin-top: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+
+    }
+
+    section>article>button {
+        height: 50px;
+        width: 130px;
+        margin-top: 50px;
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        font-size: 15px;
+        font-weight: bold;
+       
+    }
+</style>
+
+<body>
+    <section>
+        <article>
+            <h1>WELCOME TO COLOR CHANGER</h1>
+            <h3>CHOOSE THE THEME</h3>
+            <button>RED</button>
+            <button>GREEN</button>
+            <button>BLUE</button>
+            <button>ORANGE</button>
+            <button>GREY</button>
+            <button>YELLOW</button>
+            <button>RESET</button>
+
+        </article>
+    </section>
+
+
+
+    <script>
+        let btns = document.querySelectorAll("button")
+        let section = document.querySelector("section")
+        let h3 = document.querySelector("h3")
+
+
+        btns.forEach((element) => {
+            console.log(element.innerText);
+            element.addEventListener("mouseover", () => {
+                element.style.backgroundColor = element.innerText;
+                h3.innerText = `CLICK THE BUTTON TO ${element.innerText} THEME`
+                h3.style.color = element.innerText
+                h3.style.transition = "3s"
+              
+                h3.style.transform="scale(1.2) rotateX(360deg)"
+            })
+
+            element.addEventListener("mouseout", () => {
+                element.style.backgroundColor = "black";
+                h3.style.transition = "3s"
+                h3.style.transform = "scale(0.8)"
+            })
+
+            element.addEventListener("click", () => {
+                section.style.backgroundColor = element.innerText;
+                h3.style.color = "white"
+                h3.innerText = `${element.innerText} THEME ACTIVATED`
+            })
+        })
+            btns[6].addEventListener("mouseover",(x)=>{
+                x.style.backgroundColor="black"
+                x.style.color="white"
+                section.style.backgroundColor="black"
+            })
+    </script>
+</body>
+
+</html>

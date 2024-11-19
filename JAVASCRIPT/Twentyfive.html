@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            flex-direction: column;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <label for="">DARK</label>
+    <input type="radio" name="a" onclick="dark()" ondblclick="blue()">
+   
+    <label for="">LIGHT</label>
+    <input type="radio" name="a" onclick="light()">
+
+
+    <h1>DARK AND LIGHT THEME</h1>
+
+   
+    <script>
+
+        function dark(){
+            document.body.style.backgroundColor="black"
+            document.body.style.color="white"
+        }
+        function blue(){
+            document.body.style.backgroundColor="blue"
+            document.body.style.color="black"
+        }
+
+        function light(){
+            document.body.style.backgroundColor="grey"
+            document.body.style.color="black"
+        }
+    </script>
+</body>
+</html>

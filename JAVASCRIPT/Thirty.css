@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 2px solid white;
+}
+#nav>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-shadow: 3px 3px 6px red;
+}
+#homePage{
+    height: 150vh;
+    width: 100%;
+    background-color: black;
+}
+#homePage>.myForm{
+    height: 100px;
+    width: 89%;
+    /* border: 3px solid white; */
+    color: white;
+    margin-left: 110px;
+    /* margin-top: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+#homePage>.myForm input{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    height: 25px;
+}
+#homePage>.myForm button{
+    height: 25px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 10px;
+}
+#homePage>.myForm button:hover{
+    box-shadow: 0px 0px 10px white;
+    cursor: pointer;
+    background-color: rgb(116, 111, 111);
+}
+
+#homePage>.myTable{
+    color: white;
+    /* height: 300px; */
+    width: 80%;
+    /* border: 2px solid white; */
+    margin-left: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#homePage>.myTable th{
+    /* height: 80px;
+    width: 100%; */
+    border: 2px solid white;
+    text-align: center;
+}
+#homePage>.myTable td{
+    border: 2px solid white;
+    text-align: center;
+}

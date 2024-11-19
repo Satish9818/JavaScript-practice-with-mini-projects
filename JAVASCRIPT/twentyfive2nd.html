@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            height: 100vh;
+            flex-direction: column;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="singleColor()" ondblclick="doubleColor()" oncontextmenu="rightClick()">Change Color</button>
+    
+
+    <div>
+
+    </div>
+
+
+    <script>
+        function singleColor(){
+            document.body.style.backgroundColor="red"
+           let x=document.querySelector("div")
+           x.innerHTML=`<h1>Hello</h1>`
+        }
+        function doubleColor(){
+            document.body.style.backgroundColor="blue"
+            let x=document.querySelector("div")
+           x.innerHTML=`<h1>Hi<h1>`
+        }
+        function rightClick(){
+            document.body.style.backgroundColor="green"
+            let x=document.querySelector("div")
+           x.innerHTML=`<h1>Bye</h1>`
+        }
+    </script>
+</body>
+</html>

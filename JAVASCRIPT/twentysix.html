@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            flex-direction: column;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onmouseover="mouseOver()" onmouseout="mouseOut()" onmousedown="mouseDown()" onmouseup="mouseUp()">CHECK BUTTON FOR ANIMATION</button>
+
+
+
+
+
+    <script>
+
+        function mouseOver(){
+            document.body.style.backgroundColor="red"
+            document.querySelector("button").style.backgroundColor="white"
+        }
+
+        function mouseOut(){
+            document.body.style.backgroundColor="blue"
+            document.querySelector("button").style.backgroundColor="black"
+        }
+
+        function mouseDown(){
+            document.body.style.backgroundColor="green"
+            document.querySelector("button").style.backgroundColor="yellow"
+        }
+        function mouseUp(){
+            document.body.style.backgroundColor="purple"
+            document.querySelector("button").style.backgroundColor="grey"
+        }
+        
+
+    </script>
+</body>
+</html>

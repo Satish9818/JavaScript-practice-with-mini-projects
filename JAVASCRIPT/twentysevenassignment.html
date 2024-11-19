@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style> body{
+        height: 100vh;
+        flex-direction: row;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    button{
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+    
+    <button id="a" onmouseover="red()" onclick="red1()" onmouseout="red2()">RED</button>
+    <button id="b" onmouseover="green() " onclick="green1()" onmouseout="green2()">GREEN</button>
+    <button id="c" onmouseover="blue()" onclick="blue1()" onmouseout="blue2()">BLUE</button>
+    <button id="d" onmouseover="orange()" onclick="orange1()" onmouseout="orange2()">ORANGE</button>
+    
+
+    <script>
+        function red(){
+            document.body.style.backgroundColor="red"
+            
+
+           
+         
+        }
+        function red1(){
+            
+            
+        document.body.style.color="red"
+        document.getElementById("a").style.backgroundColor="red"
+         
+        }
+        function red2(){
+            
+            document.getElementById("a").style.backgroundColor="white"
+           
+         
+        }
+        function green(){
+            document.body.style.backgroundColor="green"
+            document.body.style.color="green"
+         
+        }
+        function green1(){
+            
+            document.body.style.color="green"
+           let a= document.getElementById("b").style.backgroundColor="green"
+           
+         
+        }
+        function green2(){
+            
+            document.getElementById("b").style.backgroundColor="white"
+            
+           
+         
+        }
+        function blue(){
+            document.body.style.backgroundColor="blue"
+            document.body.style.color="blue"
+       
+        }
+        function blue1(){
+            
+            document.body.style.color="blue"
+            document.getElementById("c").style.backgroundColor="blue"
+           
+         
+        }
+        function blue2(){
+            document.getElementById("c").style.backgroundColor="white" 
+         
+        }
+        function orange(){
+            document.body.style.backgroundColor="orange"
+            document.body.style.color="orange"
+        } 
+        
+        function orange1(){
+            
+            document.body.style.color="orange"
+            document.getElementById("d").style.backgroundColor="orange"
+           
+         
+           
+         
+        }
+        function orange2(){
+          
+            document.getElementById("d").style.backgroundColor="white" 
+         
+           
+         
+        }
+    
+        
+    </script>
+</body>
+
+</html>

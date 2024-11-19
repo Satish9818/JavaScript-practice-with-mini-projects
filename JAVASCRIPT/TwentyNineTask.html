@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+
+        
+    </form>
+
+
+
+    <script>
+        let form=document.createElement("form")
+        let label1=document.createElement("label")
+        let input1=document.createElement("input")
+        label1.innerText="Name "
+        input1.type="text"
+        input1.style.marginRight="20px"
+
+        let label2=document.createElement("label")
+        let input2=document.createElement("input")
+        label2.innerText="AGE "
+        input2.type="number"
+
+        let btns=document.createElement("button")
+        btns.innerText="Submit";
+        btns.style.marginLeft="385px"
+        btns.style.marginTop="10px"
+
+
+
+
+
+        form.appendChild(label1)
+        
+        form.appendChild(input1)
+       
+        form.appendChild(label2)
+       
+        form.appendChild(input2)
+
+        form.appendChild(document.createElement("br"))
+        
+        form.appendChild(btns)
+      
+        document.body.append(form)
+    </script>
+</body>
+</html>
